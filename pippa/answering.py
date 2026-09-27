@@ -43,6 +43,44 @@ UNCERTAIN_AMOUNT_RE = re.compile(
     r"\b(?:about|around|approximately|approx\.?|roughly|estimated?|between)\s+(?:AED\s*)?$",
     re.I,
 )
+FINANCIAL_ACTION_RE = re.compile(r"\b(?:financial commitment|spending|sign\w*|approv\w*)\b", re.I)
+AED_TOKEN_RE = re.compile(r"\bAED\b", re.I)
+
+
+def _starts_amount_continuation(tail: str) -> bool:
+    """Recognise a range or alternative after an AED amount in linear time."""
+    remainder = tail.lstrip()
+    if not remainder:
+        return False
+
+    if remainder[0] in "-–—":
+        remainder = remainder[1:]
+    else:
+        connector = next(
+            (
+                word
+                for word in ("to", "or", "and")
+                if remainder[: len(word)].casefold() == word
+                and (len(remainder) == len(word) or not (remainder[len(word)].isalnum() or remainder[len(word)] == "_"))
+            ),
+            "",
+        )
+        if not connector:
+            return False
+        remainder = remainder[len(connector) :]
+
+    remainder = remainder.lstrip()
+    if remainder[:3].casefold() == "aed":
+        remainder = remainder[3:].lstrip()
+    return bool(remainder and remainder[0].isdecimal())
+
+
+def _financial_context_precedes_aed(question: str) -> bool:
+    """Return whether an approval/spending term occurs before an AED token."""
+    return any(
+        FINANCIAL_ACTION_RE.search(question, 0, aed_match.start()) is not None
+        for aed_match in AED_TOKEN_RE.finditer(question)
+    )
 
 
 def _format_amount(value: Decimal) -> str:
@@ -80,7 +118,7 @@ def _parse_aed_amounts(question: str) -> ParsedAmounts:
         if UNCERTAIN_AMOUNT_RE.search(question[max(0, match.start() - 24):match.start()]):
             return ParsedAmounts(issue=f"the exact commitment amount; 'AED {raw}' is stated as an estimate")
         tail = question[match.end():]
-        if len(matches) == 1 and re.match(r"\s*(?:-|–|—|to\b|or\b|and\b)\s*(?:AED\s*)?\d", tail, re.I):
+        if len(matches) == 1 and _starts_amount_continuation(tail):
             return ParsedAmounts(issue=f"one exact total commitment amount instead of the range or alternatives starting at 'AED {raw}'")
         try:
             value = Decimal(number.replace(",", ""))
@@ -345,7 +383,7 @@ def _controlling_hits(question: str, hits: list[SearchHit], kb: KnowledgeBase) -
         clause_ids = [f"HR-007-4.{number}" for number in range(1, 6)]
     elif re.search(r"\b(cashier|sales associate|warehouse staff|contractor|induction|buddy|refresher|rfid|inventory|pos|register|login)\b", q) and re.search(r"\b(training|certification|induction|buddy|refresher|access|login|onboarding|cashier|warehouse|contractor)\b", q):
         clause_ids = [f"HR-008-4.{number}" for number in range(1, 13)]
-    elif re.search(r"\b(financial commitment|spending|sign\w*|approv\w*).*?\bAED\b", question, re.I):
+    elif _financial_context_precedes_aed(question):
         clause_ids = ["FIN-001-3.1", "FIN-001-3.2"]
     elif "fleet" in q and any(word in q for word in ("approve", "approval", "order", "activate", "procedure")):
         clause_ids = ["LOG-001-5.6", "LOG-001-5.7"]

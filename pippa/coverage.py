@@ -114,10 +114,10 @@ OVERNIGHT_STAFF_CASH_REQUEST = re.compile(
     r"\b(petty cash|cash advance|cash)\b.{0,60}\b(overnight|night shift|late shift|after hours)\b",
     re.I,
 )
-PAYDAY_DETAIL = re.compile(
-    r"\b(payday|pay date|payroll date|salary payment date|when (?:will|is|does).*salary.*paid)\b",
-    re.I,
-)
+PAYDAY_DETAIL = re.compile(r"\b(?:payday|pay date|payroll date|salary payment date)\b", re.I)
+PAYDAY_WHEN = re.compile(r"\bwhen (?:will|is|does)\b", re.I)
+SALARY_WORD = re.compile(r"\bsalary\b", re.I)
+PAID_WORD = re.compile(r"\bpaid\b", re.I)
 REFUELLING_PROCEDURE = re.compile(r"\b(refuel|refuelling|refueling|fuel(?:ling|ing)? procedure)\w*\b", re.I)
 LEAVE_USE_BY_DETAIL = re.compile(
     r"\b(?:annual )?leave\b.*\b(use[- ]by|expiry|expiration)\b|"
@@ -151,6 +151,20 @@ def _mentioned_leave_types(question: str) -> tuple[str, ...]:
         mentioned.append("sick leave")
     mentioned.extend(label for label, pattern in OTHER_LEAVE_TOPICS if pattern.search(question))
     return tuple(dict.fromkeys(mentioned))
+
+
+def _mentions_payday_detail(question: str) -> bool:
+    """Recognise payday questions without unbounded regex backtracking."""
+    if PAYDAY_DETAIL.search(question):
+        return True
+
+    for when_match in PAYDAY_WHEN.finditer(question):
+        line_end = question.find("\n", when_match.end())
+        end_position = len(question) if line_end == -1 else line_end
+        salary_match = SALARY_WORD.search(question, when_match.end(), end_position)
+        if salary_match and PAID_WORD.search(question, salary_match.end(), end_position):
+            return True
+    return False
 
 
 def escalation_contact(question: str) -> str:
@@ -271,7 +285,7 @@ def assess_coverage(question: str) -> CoverageDecision:
             missing_information=("the approved password or account-access reset procedure",),
             escalation_contact="the IT Service Desk or Information Security team",
         )
-    if PAYDAY_DETAIL.search(question):
+    if _mentions_payday_detail(question):
         has_documented_component = bool(re.search(r"\b(salary advance|off[- ]cycle|final settlement)\b", question, re.I))
         return CoverageDecision(
             covered=False,

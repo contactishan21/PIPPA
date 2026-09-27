@@ -37,6 +37,7 @@ from pippa.limits import (
 from pippa.repository import LocalConversationStore, SupabaseConversationStore
 from pippa.runtime_config import RuntimeSettings
 from pippa.suggestions import suggestions_for
+from pippa.validation import valid_email
 
 
 st.set_page_config(page_title="PIPPA", page_icon="🔷", layout="wide", initial_sidebar_state="expanded")
@@ -53,10 +54,6 @@ def load_knowledge(revision: str) -> KnowledgeBase:
 @st.cache_resource
 def question_capacity() -> QuestionCapacity:
     return QuestionCapacity()
-
-
-def valid_email(value: str) -> bool:
-    return bool(re.fullmatch(r"[^@\s]+@[^@\s]+\.[^@\s]+", value.strip()))
 
 
 def clear_user_state() -> None:
