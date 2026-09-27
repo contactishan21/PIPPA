@@ -1,0 +1,10 @@
+.env
+.streamlit/secrets.toml
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+pippa_history.db
+*.db
+outputs/
+

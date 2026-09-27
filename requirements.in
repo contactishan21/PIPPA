@@ -1,0 +1,8 @@
+streamlit==1.63.0
+supabase==2.31.0
+streamlit-cookies-manager-v2==0.3.1
+
+# Streamlit Community Cloud replaces pyarrow 25 with 24 to avoid a known
+# hosted-runtime crash. Pin the accepted hosted version before resolution so
+# local, CI and hosted installs start from the same requirement.
+pyarrow==24.0.0

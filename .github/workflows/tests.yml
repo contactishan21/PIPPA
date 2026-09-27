@@ -1,0 +1,53 @@
+name: PIPPA tests
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.12.14"]
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements-dev.txt
+
+      - name: Verify dependency consistency
+        run: python -m pip check
+
+      - name: Audit Python dependencies
+        run: python -m pip_audit -r requirements.txt
+
+      - name: Run regression tests
+        run: python -m unittest discover -s tests -q
+
+      - name: Run local 10/25/50/100-user capacity check
+        run: python tests/load_phase3.py
+
+      - name: Run 150-answer quality audit
+        if: always()
+        run: python tests/audit_answer_quality.py
+
+      - name: Upload answer-quality audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pippa-answer-quality-audit
+          path: outputs/PIPPA_answer_quality_audit.json
+          if-no-files-found: error
+

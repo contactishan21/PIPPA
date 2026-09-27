@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
+</head>
+<body style="margin:0;background:transparent">
+  <div id="pippa-turnstile-widget"></div>
+  <script>
+    let widgetId = null;
+    let currentSiteKey = "";
+
+    function post(type, extra) {
+      window.parent.postMessage(Object.assign({isStreamlitMessage: true, type: type}, extra || {}), "*");
+    }
+
+    function setValue(value) {
+      post("streamlit:setComponentValue", {value: value, dataType: "json"});
+    }
+
+    function renderWidget(siteKey) {
+      if (!window.turnstile || typeof window.turnstile.render !== "function") {
+        window.setTimeout(function () { renderWidget(siteKey); }, 100);
+        return;
+      }
+      if (widgetId !== null && currentSiteKey === siteKey) return;
+      if (widgetId !== null) window.turnstile.remove(widgetId);
+      currentSiteKey = siteKey;
+      widgetId = window.turnstile.render("#pippa-turnstile-widget", {
+        sitekey: siteKey,
+        theme: "light",
+        size: "flexible",
+        action: "pippa_sign_in",
+        callback: function (token) { setValue(token); },
+        "expired-callback": function () { setValue(""); window.turnstile.reset(widgetId); },
+        "error-callback": function () { setValue(""); }
+      });
+      post("streamlit:setFrameHeight", {height: 72});
+    }
+
+    window.addEventListener("message", function (event) {
+      if (!event.data || event.data.type !== "streamlit:render") return;
+      const siteKey = String((event.data.args || {}).site_key || "");
+      if (siteKey) renderWidget(siteKey);
+    });
+
+    post("streamlit:componentReady", {apiVersion: 1});
+    post("streamlit:setFrameHeight", {height: 72});
+  </script>
+</body>
+</html>

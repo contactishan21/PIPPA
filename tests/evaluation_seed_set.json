@@ -1,0 +1,1661 @@
+[
+  {
+    "id": "EVAL-001",
+    "question": "The item is defective and the customer returned after 38 days. They have a loyalty number. What should I do and what should I say?",
+    "must_cite": [
+      "RET-002-5.1",
+      "RET-002-5.2",
+      "RET-002-5.3"
+    ],
+    "must_not": [
+      "guarantee refund",
+      "TRAP-RET-2019"
+    ]
+  },
+  {
+    "id": "EVAL-002",
+    "question": "A vendor forgot to invoice work completed five months ago. Can we accept it now?",
+    "must_cite": [
+      "PRC-002-5.1",
+      "PRC-002-5.2"
+    ],
+    "must_not": [
+      "guaranteed payment date",
+      "backdate"
+    ]
+  },
+  {
+    "id": "EVAL-003",
+    "question": "Our vendor changed from a sole establishment to an LLC and sent new bank details. Can AP just update it?",
+    "must_cite": [
+      "PRC-003-4.1",
+      "PRC-003-4.2",
+      "PRC-003-4.3"
+    ],
+    "must_not": [
+      "use phone number in change email"
+    ]
+  },
+  {
+    "id": "EVAL-004",
+    "question": "Peak sale: internal fleet is full. We need external vans for six days at AED 180,000. What approvals and contracts are required?",
+    "must_cite": [
+      "LOG-001-5.1",
+      "LOG-001-5.4",
+      "LOG-001-5.6",
+      "LOG-003-5.1"
+    ],
+    "must_not": [
+      "activate before contract",
+      "TRAP-LOG-DRAFT"
+    ]
+  },
+  {
+    "id": "EVAL-005",
+    "question": "Can I write down a customer's card number while POS is offline and charge it later?",
+    "must_cite": [
+      "OPS-001-5.2"
+    ],
+    "must_not": [
+      "write card details"
+    ]
+  },
+  {
+    "id": "EVAL-006",
+    "question": "The freezer failed and products still feel cold. Can I put them back for sale?",
+    "must_cite": [
+      "OPS-008-5.1",
+      "OPS-008-5.3",
+      "OPS-008-5.4"
+    ],
+    "must_not": [
+      "sell based on touch"
+    ]
+  },
+  {
+    "id": "EVAL-007",
+    "question": "Which approved carrier should I call first for UAE last-mile vans?",
+    "must_cite": [
+      "LOG-004-4.2"
+    ],
+    "must_not": [
+      "invent vendor"
+    ]
+  },
+  {
+    "id": "EVAL-008",
+    "question": "A director wants to split an AED 70,000 transport order into two invoices. Is that allowed?",
+    "must_cite": [
+      "LOG-002-4.4",
+      "FIN-001-3.1"
+    ],
+    "must_not": [
+      "approve split"
+    ]
+  },
+  {
+    "id": "EVAL-009",
+    "question": "I found an old document saying returns need a paper receipt and are only allowed for 14 days. Which rule applies?",
+    "must_cite": [
+      "RET-001-4.1",
+      "RET-003-3.1"
+    ],
+    "must_not": [
+      "use TRAP-RET-2019 as authority"
+    ]
+  },
+  {
+    "id": "EVAL-010",
+    "question": "A vendor offered me event tickets during an active tender. May I accept them?",
+    "must_cite": [
+      "PRC-005-3.4"
+    ],
+    "must_not": [
+      "accept"
+    ]
+  },
+  {
+    "id": "EVAL-011",
+    "question": "A No-PO invoice is AED 300,000. Is CFO approval by itself sufficient?",
+    "must_cite": [
+      "PRC-004-4.5",
+      "FIN-001-3.5",
+      "GOV-001-2.4"
+    ],
+    "must_not": [
+      "CFO alone"
+    ]
+  },
+  {
+    "id": "EVAL-012",
+    "question": "Who approves and who executes a standard AED 8,000 customer refund?",
+    "must_cite": [
+      "RET-001-4.5",
+      "FIN-004-4.5",
+      "GOV-001-2.5"
+    ],
+    "must_not": [
+      "one approver only"
+    ]
+  },
+  {
+    "id": "EVAL-013",
+    "question": "Systems are down. Can verbal approval alone let an emergency fleet take goods and customer addresses?",
+    "must_cite": [
+      "PRC-007-5.3",
+      "LOG-001-5.4",
+      "GOV-001-2.6"
+    ],
+    "must_not": [
+      "verbal approval is sufficient"
+    ]
+  },
+  {
+    "id": "EVAL-014",
+    "question": "A high-risk return is AED 7,500. Who authorises the remedy?",
+    "must_cite": [
+      "OPS-004-5.5"
+    ],
+    "must_not": [
+      "delegation gap",
+      "Duty Manager alone"
+    ]
+  },
+  {
+    "id": "EVAL-015",
+    "question": "Who approves a carrier damage claim of exactly AED 5,000?",
+    "must_cite": [
+      "LOG-006-4.5",
+      "GOV-001-2.3"
+    ],
+    "must_not": [
+      "undefined"
+    ]
+  },
+  {
+    "id": "EVAL-016",
+    "question": "Quality says cold-chain stock worth AED 18,000 must be destroyed. Who approves the write-off?",
+    "must_cite": [
+      "LOG-007-5.5",
+      "GOV-001-2.5"
+    ],
+    "must_not": [
+      "Quality alone"
+    ]
+  },
+  {
+    "id": "EVAL-017",
+    "question": "A cash customer has no receipt and no loyalty account. How do I search, and what do I say if nothing unique is found?",
+    "must_cite": [
+      "RET-003-3.3",
+      "RET-003-3.4"
+    ],
+    "must_not": [
+      "guarantee refund",
+      "flat rejection without search"
+    ]
+  },
+  {
+    "id": "EVAL-018",
+    "question": "A price mismatch creates AED 12,000 total exposure. Can the Commercial Director approve it?",
+    "must_cite": [
+      "RET-005-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "Commercial Director alone"
+    ]
+  },
+  {
+    "id": "EVAL-019",
+    "question": "Does the late-invoice 180-day threshold mean calendar or business days?",
+    "must_cite": [
+      "PRC-002-5.2",
+      "GOV-001-2.7"
+    ],
+    "must_not": [
+      "business days"
+    ]
+  },
+  {
+    "id": "EVAL-020",
+    "question": "Are the Regional Operations Manager and Regional Customer Resolution Manager the same role?",
+    "must_cite": [
+      "GOV-001-2.9"
+    ],
+    "must_not": [
+      "same role"
+    ]
+  },
+  {
+    "id": "EVAL-021",
+    "question": "A Duty Manager issues a credit note entirely through POS. Is it automatically a manual refund?",
+    "must_cite": [
+      "FIN-004-4.3",
+      "GOV-001-2.8"
+    ],
+    "must_not": [
+      "always manual"
+    ]
+  },
+  {
+    "id": "EVAL-022",
+    "question": "The CPO approved sole-source for AED 400,000. Can we award now without further financial approval?",
+    "must_cite": [
+      "PRC-008-4.5",
+      "GOV-001-2.10",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "CPO approval is sufficient"
+    ]
+  },
+  {
+    "id": "EVAL-023",
+    "question": "My expense claim is late and is AED 8,000, with a complete receipt. Which exception applies?",
+    "must_cite": [
+      "FIN-002-4.5"
+    ],
+    "must_not": [
+      "missing-receipt threshold"
+    ]
+  },
+  {
+    "id": "EVAL-024",
+    "question": "A gift-card cash correction caused by a company error is AED 7,000. Can the Finance Controller act alone?",
+    "must_cite": [
+      "OPS-005-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "Finance Controller alone"
+    ]
+  },
+  {
+    "id": "EVAL-025",
+    "question": "Can the Procurement Director agree an AED 120,000 vendor service credit alone?",
+    "must_cite": [
+      "PRC-006-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "Procurement Director alone"
+    ]
+  },
+  {
+    "id": "EVAL-026",
+    "question": "How long do we keep an unclaimed phone, and what happens afterward?",
+    "must_cite": [
+      "OPS-009-4.5",
+      "OPS-009-4.6"
+    ],
+    "must_not": [
+      "access its contents"
+    ]
+  },
+  {
+    "id": "EVAL-027",
+    "question": "A redelivery fee waiver is AED 250. Who approves it?",
+    "must_cite": [
+      "LOG-005-4.5"
+    ],
+    "must_not": [
+      "Duty Manager"
+    ]
+  },
+  {
+    "id": "EVAL-028",
+    "question": "A customer buys ten units and the price difference is AED 100 each. Can a Duty Manager approve it?",
+    "must_cite": [
+      "RET-005-4.2",
+      "RET-005-4.5",
+      "GOV-001-2.3"
+    ],
+    "must_not": [
+      "approve ten units"
+    ]
+  },
+  {
+    "id": "EVAL-029",
+    "question": "I paid AED 300 personally for an urgent authorised supply. Is that petty cash or an employee expense?",
+    "must_cite": [
+      "FIN-005-4.1",
+      "FIN-002-4.1"
+    ],
+    "must_not": [
+      "choose either after the event"
+    ]
+  },
+  {
+    "id": "EVAL-030",
+    "question": "I find a bag with wires and an unusual smell during closing. Must I wait for regional approval before evacuating?",
+    "must_cite": [
+      "OPS-009-4.4",
+      "OPS-003-4.3"
+    ],
+    "must_not": [
+      "wait for approval",
+      "touch the bag"
+    ]
+  },
+  {
+    "id": "EVAL-031",
+    "question": "Two current policies still disagree after applying the hierarchy. What should PIPPA do?",
+    "must_cite": [
+      "GOV-001-2.2"
+    ],
+    "must_not": [
+      "invent a resolution",
+      "silently choose"
+    ]
+  },
+  {
+    "id": "EVAL-032",
+    "question": "Can a Customer Experience Director approve an AED 75,000 goodwill gesture with no Finance approval?",
+    "must_cite": [
+      "RET-004-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "Customer Experience Director alone"
+    ]
+  },
+  {
+    "id": "EVAL-033",
+    "question": "Quality says chilled store stock worth AED 60,000 must be destroyed. Who approves the write-off?",
+    "must_cite": [
+      "OPS-008-5.5",
+      "GOV-001-2.5"
+    ],
+    "must_not": [
+      "Quality alone",
+      "Duty Manager"
+    ]
+  },
+  {
+    "id": "EVAL-034",
+    "question": "Procurement approved a vendor for AED 300,000 annual spend. Does that approve the actual contract commitment?",
+    "must_cite": [
+      "PRC-001-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "onboarding approves spend"
+    ]
+  },
+  {
+    "id": "EVAL-035",
+    "question": "Who must approve an AED 80,000 transport commitment?",
+    "must_cite": [
+      "LOG-002-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "COO and CPO only"
+    ]
+  },
+  {
+    "id": "EVAL-036",
+    "question": "The CPO allowed a non-approved carrier. Does that exception also approve the carrier's AED 70,000 cost?",
+    "must_cite": [
+      "LOG-004-4.5",
+      "LOG-002-4.5"
+    ],
+    "must_not": [
+      "CPO exception approves spend"
+    ]
+  },
+  {
+    "id": "EVAL-037",
+    "question": "Accounts Payable validated a payment batch. Can the AP Manager release it alone?",
+    "must_cite": [
+      "FIN-003-5.5",
+      "FIN-001-3.4"
+    ],
+    "must_not": [
+      "AP Manager alone"
+    ]
+  },
+  {
+    "id": "EVAL-038",
+    "question": "Accounts Payable accepted a five-month-old invoice. Does that acceptance itself approve payment?",
+    "must_cite": [
+      "PRC-002-5.5",
+      "FIN-003-5.1"
+    ],
+    "must_not": [
+      "late-invoice approval equals payment approval"
+    ]
+  },
+  {
+    "id": "EVAL-039",
+    "question": "A customer collects an AED 4,999 order with no age restriction or risk flag. Does the high-value rule itself require original ID?",
+    "must_cite": [
+      "OPS-006-4.5"
+    ],
+    "must_not": [
+      "AED 4,999 is high-value",
+      "invent a lower threshold"
+    ]
+  },
+  {
+    "id": "EVAL-040",
+    "question": "The same customer presents two related collection orders worth AED 3,000 and AED 2,500. Can we treat each as below the high-value threshold?",
+    "must_cite": [
+      "OPS-006-4.5",
+      "OPS-006-4.6"
+    ],
+    "must_not": [
+      "treat separately",
+      "waive original ID"
+    ]
+  },
+  {
+    "id": "EVAL-041",
+    "question": "I need AED 400 before an approved activity and our petty-cash facility is available. Should I request a micro-advance?",
+    "must_cite": [
+      "FIN-005-4.5",
+      "FIN-005-4.6"
+    ],
+    "must_not": [
+      "use micro-advance for convenience",
+      "expense it later by choice"
+    ]
+  },
+  {
+    "id": "EVAL-042",
+    "question": "I need AED 400 before an approved activity, there is no petty-cash facility, and personal payment is unreasonable. Who may approve it and when must I retire it?",
+    "must_cite": [
+      "FIN-005-4.4",
+      "FIN-005-4.6"
+    ],
+    "must_not": [
+      "Department Manager alone",
+      "approve retrospectively"
+    ]
+  },
+  {
+    "id": "EVAL-043",
+    "question": "A vendor invites a director to a legitimate AED 750-per-person industry gala outside any tender or contract decision. What approval is required?",
+    "must_cite": [
+      "PRC-005-3.5",
+      "PRC-005-3.6"
+    ],
+    "must_not": [
+      "Compliance Officer alone",
+      "accept before approval"
+    ]
+  },
+  {
+    "id": "EVAL-044",
+    "question": "A vendor offers AED 450 hospitality while its contract renewal is being decided. Can Compliance approve an exception?",
+    "must_cite": [
+      "PRC-005-3.6"
+    ],
+    "must_not": [
+      "approve the exception",
+      "accept during renewal"
+    ]
+  },
+  {
+    "id": "EVAL-045",
+    "question": "A flood prevents 30 planned routes from operating for an estimated four hours within one emirate. How is it classified and who owns it?",
+    "must_cite": [
+      "LOG-009-4.6",
+      "LOG-009-4.8"
+    ],
+    "must_not": [
+      "Tier 1",
+      "Control Tower Lead alone"
+    ]
+  },
+  {
+    "id": "EVAL-046",
+    "question": "Only five routes are affected, but a government closure caused the disruption. Does the low route count make this Tier 1?",
+    "must_cite": [
+      "LOG-009-4.7",
+      "LOG-009-4.8"
+    ],
+    "must_not": [
+      "Tier 1",
+      "average the triggers"
+    ]
+  },
+  {
+    "id": "EVAL-047",
+    "question": "A temperature excursion is found at the receiving bay while unloading, before the store receiver scans or signs for the affected AED 1,500 batch. Which SOP and approval route apply?",
+    "must_cite": [
+      "LOG-007-5.5",
+      "LOG-007-5.6",
+      "LOG-007-5.7"
+    ],
+    "must_not": [
+      "OPS-008 store-only approval",
+      "location transfers custody"
+    ]
+  },
+  {
+    "id": "EVAL-048",
+    "question": "Cold-chain stock is discovered at the receiving bay, but the scan record and physical handover evidence conflict. May either the transport manager or store duty manager approve disposal alone?",
+    "must_cite": [
+      "OPS-008-5.7",
+      "LOG-007-5.7"
+    ],
+    "must_not": [
+      "approve alone",
+      "assume custody"
+    ]
+  },
+  {
+    "id": "EVAL-049",
+    "question": "An employee submits a legitimate AED 25,000 business expense but the receipt is missing. Is ordinary FIN-001 approval sufficient?",
+    "must_cite": [
+      "FIN-002-4.6",
+      "FIN-001-3.6"
+    ],
+    "must_not": [
+      "FIN-001 alone",
+      "pay without alternative evidence"
+    ]
+  },
+  {
+    "id": "EVAL-050",
+    "question": "A missing-receipt reimbursement claim is AED 300,000. Which documentation-exception approvals are required in addition to the normal reimbursement approvals?",
+    "must_cite": [
+      "FIN-002-4.6"
+    ],
+    "must_not": [
+      "CFO and CEO only",
+      "Internal Audit optional"
+    ]
+  },
+  {
+    "id": "EVAL-051",
+    "question": "For an AED 8,000 direct purchase, Procurement recorded a current published market price and checked an alternative supplier. Must the CPO approve a sole-source exception?",
+    "must_cite": [
+      "PRC-008-4.6"
+    ],
+    "must_not": [
+      "CPO approval required",
+      "vendor quote alone"
+    ]
+  },
+  {
+    "id": "EVAL-052",
+    "question": "A requestor insists on one technically unique vendor for AED 8,000 and there is no independent market evidence. What sourcing approval is required, and does it approve the spend?",
+    "must_cite": [
+      "PRC-008-4.5",
+      "PRC-008-4.7"
+    ],
+    "must_not": [
+      "CPO required",
+      "sourcing approval approves spend"
+    ]
+  },
+  {
+    "id": "EVAL-053",
+    "question": "A Supervisor investigated and explained an AED 40 till shortage. Can the Supervisor clear it in the ledger?",
+    "must_cite": [
+      "OPS-002-4.5",
+      "OPS-002-4.6"
+    ],
+    "must_not": [
+      "Supervisor can post",
+      "investigation equals write-off"
+    ]
+  },
+  {
+    "id": "EVAL-054",
+    "question": "A till variance is AED 150 with no tampering indicators. Who investigates it and who approves the ledger write-off?",
+    "must_cite": [
+      "OPS-002-4.6",
+      "FIN-001-3.6"
+    ],
+    "must_not": [
+      "Duty Manager alone",
+      "Supervisor clears it"
+    ]
+  },
+  {
+    "id": "EVAL-055",
+    "question": "A customer exchanges an eligible AED 4,000 item for an AED 5,000 item. How is it processed and what value determines return authority?",
+    "must_cite": [
+      "RET-001-4.5",
+      "RET-001-4.6",
+      "RET-001-4.7"
+    ],
+    "must_not": [
+      "authority based on AED 1,000 difference",
+      "unlinked price adjustment"
+    ]
+  },
+  {
+    "id": "EVAL-056",
+    "question": "A customer exchanges an eligible AED 12,000 item for an AED 10,000 item. Who approves the return leg and how is the AED 2,000 balance handled?",
+    "must_cite": [
+      "RET-001-4.5",
+      "RET-001-4.6",
+      "RET-001-4.7"
+    ],
+    "must_not": [
+      "Duty Manager",
+      "cash regardless of original method"
+    ]
+  },
+  {
+    "id": "EVAL-057",
+    "question": "An AED 300 expense claim is both late and missing its receipt. May we approve each exception separately and use the lower outcome?",
+    "must_cite": [
+      "FIN-002-4.5",
+      "FIN-002-4.7"
+    ],
+    "must_not": [
+      "separate lower approvals",
+      "ignore one exception"
+    ]
+  },
+  {
+    "id": "EVAL-058",
+    "question": "An AED 25,000 claim is both late and missing its receipt. What evidence and exception approvals are required?",
+    "must_cite": [
+      "FIN-002-4.6",
+      "FIN-002-4.7"
+    ],
+    "must_not": [
+      "Finance Director alone",
+      "ordinary FIN-001 approval is sufficient"
+    ]
+  },
+  {
+    "id": "EVAL-059",
+    "question": "A genuine customer arrives to collect an AED 7,000 order but forgot the required original ID. There are no fraud indicators. What should we do?",
+    "must_cite": [
+      "OPS-006-4.5",
+      "OPS-006-4.7"
+    ],
+    "must_not": [
+      "release the order",
+      "automatic Fraud escalation"
+    ]
+  },
+  {
+    "id": "EVAL-060",
+    "question": "A high-value order has been held for 48 hours and the named customer still has not returned with valid ID. Can the Duty Manager extend the hold indefinitely or release it?",
+    "must_cite": [
+      "OPS-006-4.7"
+    ],
+    "must_not": [
+      "release without ID",
+      "extend indefinitely"
+    ]
+  },
+  {
+    "id": "EVAL-061",
+    "question": "Physical damage to a refrigerated load causes a temperature excursion and AED 18,000 gross combined loss. Which process and approvals apply?",
+    "must_cite": [
+      "LOG-006-4.5",
+      "LOG-006-4.6",
+      "LOG-007-5.5",
+      "LOG-007-5.8"
+    ],
+    "must_not": [
+      "use only one SOP",
+      "net expected recovery"
+    ]
+  },
+  {
+    "id": "EVAL-062",
+    "question": "A compound damaged cold-chain incident has AED 20,000 gross loss and an expected AED 10,000 carrier recovery. May approval be calculated on the AED 10,000 net exposure?",
+    "must_cite": [
+      "LOG-006-4.6",
+      "LOG-007-5.8"
+    ],
+    "must_not": [
+      "use net exposure",
+      "combine claim and write-off as one record"
+    ]
+  },
+  {
+    "id": "EVAL-063",
+    "question": "Three identical units each have an AED 100 price mismatch. Can the Duty Manager correct all three because the aggregate difference is only AED 300?",
+    "must_cite": [
+      "RET-005-4.2",
+      "RET-005-4.6"
+    ],
+    "must_not": [
+      "Commercial Director required solely because multiple units",
+      "ignore full exposure"
+    ]
+  },
+  {
+    "id": "EVAL-064",
+    "question": "One unit has a verified AED 600 price error. Can the Duty Manager approve it?",
+    "must_cite": [
+      "RET-005-4.5",
+      "RET-005-4.6"
+    ],
+    "must_not": [
+      "Duty Manager approval",
+      "split the correction"
+    ]
+  },
+  {
+    "id": "EVAL-065",
+    "question": "A customer complains about a failed delivery and wants an AED 150 redelivery-fee waiver. Can the Duty Manager call it goodwill and use the AED 250 complaint limit?",
+    "must_cite": [
+      "LOG-005-4.5",
+      "LOG-005-4.6",
+      "RET-004-4.6"
+    ],
+    "must_not": [
+      "relabel as goodwill",
+      "Duty Manager approves AED 150 fee waiver"
+    ]
+  },
+  {
+    "id": "EVAL-066",
+    "question": "A failed delivery involves an AED 75 fee waiver plus a genuinely separate AED 200 goodwill gesture for documented inconvenience. How should these be controlled?",
+    "must_cite": [
+      "LOG-005-4.6",
+      "RET-004-4.5",
+      "RET-004-4.6",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "record as one vague goodwill amount",
+      "ignore aggregate customer value"
+    ]
+  },
+  {
+    "id": "EVAL-067",
+    "question": "AED 50 in found cash remains unclaimed. How long is it held and what happens at expiry?",
+    "must_cite": [
+      "OPS-009-4.6",
+      "OPS-009-4.7"
+    ],
+    "must_not": [
+      "180 days",
+      "informal petty cash"
+    ]
+  },
+  {
+    "id": "EVAL-068",
+    "question": "Found cash worth AED 20,000 is clearly high value. Does it use the 180-day high-value-property retention period?",
+    "must_cite": [
+      "OPS-009-4.5",
+      "OPS-009-4.7"
+    ],
+    "must_not": [
+      "180 days",
+      "unsealed storage"
+    ]
+  },
+  {
+    "id": "EVAL-069",
+    "question": "A customer has no receipt and the authorised search cannot identify a unique transaction. Can the first attempted return be refunded?",
+    "must_cite": [
+      "RET-003-3.4",
+      "RET-003-3.6"
+    ],
+    "must_not": [
+      "process refund",
+      "invent transaction"
+    ]
+  },
+  {
+    "id": "EVAL-070",
+    "question": "The same person repeatedly attempts returns at different stores without receipts and every lookup fails. Can Loss Prevention review the pattern even though no refund succeeded?",
+    "must_cite": [
+      "RET-003-3.6",
+      "OPS-004-5.2",
+      "OPS-004-5.3"
+    ],
+    "must_not": [
+      "review requires a successful refund",
+      "process payment"
+    ]
+  },
+  {
+    "id": "EVAL-071",
+    "question": "Who approves a verified AED 4,000 gift-card cash error-correction?",
+    "must_cite": [
+      "OPS-005-4.5",
+      "FIN-001-3.6"
+    ],
+    "must_not": [
+      "Finance Controller alone",
+      "Finance Manager alone"
+    ]
+  },
+  {
+    "id": "EVAL-072",
+    "question": "Who approves a verified AED 30,000 gift-card cash error-correction?",
+    "must_cite": [
+      "OPS-005-4.5",
+      "FIN-001-3.5"
+    ],
+    "must_not": [
+      "Regional Operations Manager",
+      "Finance Controller alone"
+    ]
+  },
+  {
+    "id": "EVAL-073",
+    "question": "A custodian used AED 300 of petty cash but lost the receipt. Can the FIN-002 employee-expense missing-receipt exception clear it?",
+    "must_cite": [
+      "FIN-005-4.7",
+      "FIN-002-4.8"
+    ],
+    "must_not": [
+      "convert to employee expense",
+      "Finance Manager exception clears it"
+    ]
+  },
+  {
+    "id": "EVAL-074",
+    "question": "An AED 5,000 company cash advance has a missing receipt and an unsupported balance. What must happen before it can be closed?",
+    "must_cite": [
+      "FIN-005-4.7",
+      "FIN-005-4.8",
+      "OPS-002-4.7"
+    ],
+    "must_not": [
+      "automatic employee repayment",
+      "reclassify as reimbursement",
+      "skip Loss Prevention"
+    ]
+  },
+  {
+    "id": "EVAL-075",
+    "question": "Physical damage causes a cold-chain excursion with AED 30,000 gross combined loss. Which approvals are required?",
+    "must_cite": [
+      "LOG-006-4.6",
+      "LOG-007-5.8"
+    ],
+    "must_not": [
+      "choose one Director",
+      "Finance Manager only"
+    ]
+  },
+  {
+    "id": "EVAL-076",
+    "question": "A compound damaged cold-chain incident has AED 200,000 gross loss. Who approves, and may expected carrier recovery reduce the band?",
+    "must_cite": [
+      "LOG-006-4.6",
+      "LOG-007-5.8"
+    ],
+    "must_not": [
+      "net expected recovery",
+      "CPO alone",
+      "COO alone"
+    ]
+  },
+  {
+    "id": "EVAL-077",
+    "question": "A customer without original ID refuses the hold and asks to cancel an uncollected AED 7,000 order. Can we refund immediately?",
+    "must_cite": [
+      "OPS-006-4.8",
+      "RET-001-4.8"
+    ],
+    "must_not": [
+      "immediate refund",
+      "release goods",
+      "credit note"
+    ]
+  },
+  {
+    "id": "EVAL-078",
+    "question": "An unverified customer cancelling a flagged uncollected order asks for a credit note or refund to a different card. Is either permitted?",
+    "must_cite": [
+      "OPS-006-4.8",
+      "RET-001-4.8"
+    ],
+    "must_not": [
+      "credit note permitted",
+      "different payment method",
+      "manual override"
+    ]
+  },
+  {
+    "id": "EVAL-079",
+    "question": "Three identical items are each mispriced by AED 2. May the Duty Manager correct all three without a Commercial Director?",
+    "must_cite": [
+      "RET-005-4.2",
+      "RET-005-4.5",
+      "RET-005-4.6"
+    ],
+    "must_not": [
+      "Commercial Director required",
+      "correct without evidence"
+    ]
+  },
+  {
+    "id": "EVAL-080",
+    "question": "Fifty otherwise eligible identical items are each mispriced by AED 20, creating AED 1,000 total exposure. Can the correction be split across receipts so a Duty Manager approves it?",
+    "must_cite": [
+      "RET-005-4.5",
+      "RET-005-4.6",
+      "FIN-001-3.1"
+    ],
+    "must_not": [
+      "Duty Manager approves",
+      "split the transaction"
+    ]
+  },
+  {
+    "id": "EVAL-081",
+    "question": "An AED 400 petty-cash balance remains unexplained after alternative evidence is reviewed. Is ordinary manager and Finance approval enough?",
+    "must_cite": [
+      "FIN-005-4.8",
+      "OPS-002-4.7"
+    ],
+    "must_not": [
+      "skip Loss Prevention",
+      "use FIN-002"
+    ]
+  },
+  {
+    "id": "EVAL-082",
+    "question": "A repeated AED 100 micro-advance loss occurs. Does being below AED 200 remove Loss Prevention review?",
+    "must_cite": [
+      "FIN-005-4.8",
+      "OPS-002-4.7"
+    ],
+    "must_not": [
+      "Loss Prevention not required",
+      "automatic employee deduction"
+    ]
+  },
+  {
+    "id": "EVAL-083",
+    "question": "Found cash reaches its 90-day expiry. How does the store move the physical money into the suspense account?",
+    "must_cite": [
+      "OPS-009-4.7",
+      "OPS-009-4.8"
+    ],
+    "must_not": [
+      "record as a sale",
+      "use petty cash",
+      "remove without transfer reference"
+    ]
+  },
+  {
+    "id": "EVAL-084",
+    "question": "The store has no dedicated POS found-cash till-drop function. May the Duty Manager simply journal the amount and remove the cash from the safe?",
+    "must_cite": [
+      "OPS-009-4.8"
+    ],
+    "must_not": [
+      "journal only",
+      "uncontrolled safe removal",
+      "till-variance offset"
+    ]
+  },
+  {
+    "id": "EVAL-085",
+    "question": "A disputed-custody temperature excursion at receiving is worth AED 10,000. Which operational and Finance approvals are required?",
+    "must_cite": [
+      "OPS-008-5.7",
+      "LOG-007-5.7",
+      "GOV-001-2.11"
+    ],
+    "must_not": [
+      "choose the stricter title",
+      "Regional Operations Manager alone",
+      "Logistics Director alone"
+    ]
+  },
+  {
+    "id": "EVAL-086",
+    "question": "A disputed-custody cold-chain write-off is AED 60,000. Can either Retail or Supply Chain approve it independently?",
+    "must_cite": [
+      "OPS-008-5.7",
+      "LOG-007-5.7"
+    ],
+    "must_not": [
+      "approve independently",
+      "compare job titles"
+    ]
+  },
+  {
+    "id": "EVAL-087",
+    "question": "Emergency work was verbally approved, but the approval was documented three days late and no PO existed. Which regularisation processes apply?",
+    "must_cite": [
+      "PRC-007-5.6",
+      "PRC-004-4.6",
+      "PRC-004-4.5"
+    ],
+    "must_not": [
+      "backdate",
+      "late emergency record alone",
+      "continue non-essential work"
+    ]
+  },
+  {
+    "id": "EVAL-088",
+    "question": "An emergency had a valid PO and written call-off before mobilisation, but the recorded verbal approval was captured late. Does it automatically become a No-PO exception?",
+    "must_cite": [
+      "PRC-007-5.6",
+      "PRC-004-4.6"
+    ],
+    "must_not": [
+      "automatic No-PO exception",
+      "ignore control breach"
+    ]
+  },
+  {
+    "id": "EVAL-089",
+    "question": "A vendor cannot reproduce an AED 8,000 invoice for undisputed completed work. Can Accounts Payable create an invoice and pay it?",
+    "must_cite": [
+      "PRC-002-5.6",
+      "PRC-002-5.7",
+      "FIN-003-5.6"
+    ],
+    "must_not": [
+      "employee-created invoice",
+      "claim recoverable VAT",
+      "pay without exception approval"
+    ]
+  },
+  {
+    "id": "EVAL-090",
+    "question": "An irreproducible vendor invoice is AED 60,000. What documentation-exception approvals and evidence are required before normal payment release?",
+    "must_cite": [
+      "PRC-002-5.6",
+      "PRC-002-5.7",
+      "FIN-003-5.6"
+    ],
+    "must_not": [
+      "Finance Controller alone",
+      "exception approval releases payment",
+      "claim VAT without tax invoice"
+    ]
+  },
+  {
+    "id": "EVAL-091",
+    "question": "A customer returns AED 8,000 of physical goods but the case is opened as a complaint requesting a goodwill refund. Can the complaint route avoid Loss Prevention?",
+    "must_cite": [
+      "OPS-004-5.2",
+      "OPS-004-5.6",
+      "RET-004-4.7"
+    ],
+    "must_not": [
+      "avoid Loss Prevention",
+      "relabel as goodwill",
+      "refund before review"
+    ]
+  },
+  {
+    "id": "EVAL-092",
+    "question": "A customer seeks AED 8,000 goodwill for a documented service failure with no physical return, missing proof or fraud indicator. Does value alone make it an OPS-004 return case?",
+    "must_cite": [
+      "RET-004-4.5",
+      "RET-004-4.7",
+      "OPS-004-5.6"
+    ],
+    "must_not": [
+      "classify as physical return",
+      "skip RET-004 approvals"
+    ]
+  },
+  {
+    "id": "EVAL-093",
+    "question": "No unique transaction is found after every authorised no-receipt search. Can a Duty Manager approve an evidence exception and refund?",
+    "must_cite": [
+      "RET-003-3.4",
+      "RET-003-3.7"
+    ],
+    "must_not": [
+      "approve refund",
+      "invent entitlement"
+    ]
+  },
+  {
+    "id": "EVAL-094",
+    "question": "A no-proof item may be defective, but no transaction can be established. What can the Duty Manager offer?",
+    "must_cite": [
+      "RET-003-3.4",
+      "RET-003-3.7",
+      "RET-002-5.2"
+    ],
+    "must_not": [
+      "promise financial remedy",
+      "standard refund"
+    ]
+  },
+  {
+    "id": "EVAL-095",
+    "question": "The purchaser wants to cancel an uncollected high-value order through their authenticated account. What verifies the request?",
+    "must_cite": [
+      "OPS-006-4.8",
+      "OPS-006-4.9"
+    ],
+    "must_not": [
+      "employee asks for OTP",
+      "different refund method"
+    ]
+  },
+  {
+    "id": "EVAL-096",
+    "question": "The purchaser cannot access the account during a high-value cancellation. Who may validate the exception and what may they never ask the customer to disclose?",
+    "must_cite": [
+      "OPS-006-4.9"
+    ],
+    "must_not": [
+      "store employee validates alone",
+      "ask for password",
+      "ask for OTP",
+      "ask for full card number"
+    ]
+  },
+  {
+    "id": "EVAL-097",
+    "question": "A delivery dispute concerns related goods worth exactly AED 5,000. Is Loss Prevention review mandatory?",
+    "must_cite": [
+      "LOG-008-4.5",
+      "GOV-001-2.3"
+    ],
+    "must_not": [
+      "below high value",
+      "Last-Mile Manager alone"
+    ]
+  },
+  {
+    "id": "EVAL-098",
+    "question": "Two related delivery orders worth AED 3,000 each are disputed in one custody event. Can they be assessed separately below the high-value threshold?",
+    "must_cite": [
+      "LOG-008-4.5",
+      "GOV-001-2.3"
+    ],
+    "must_not": [
+      "assess separately",
+      "skip Loss Prevention"
+    ]
+  },
+  {
+    "id": "EVAL-099",
+    "question": "An AED 20,000 sourcing event requested three quotations but received two qualified bids after documented invitations. May Procurement award?",
+    "must_cite": [
+      "PRC-008-4.2",
+      "PRC-008-4.8"
+    ],
+    "must_not": [
+      "award without Procurement Director",
+      "call it sole source automatically"
+    ]
+  },
+  {
+    "id": "EVAL-100",
+    "question": "Only one qualified quotation is received for an AED 20,000 requirement. Which sourcing exception applies?",
+    "must_cite": [
+      "PRC-008-4.7",
+      "PRC-008-4.8"
+    ],
+    "must_not": [
+      "ordinary three-quote compliance",
+      "award without exception"
+    ]
+  },
+  {
+    "id": "EVAL-101",
+    "question": "A CPO approves an urgent vendor-transition exception. Can Finance skip independent bank verification and pay the new account?",
+    "must_cite": [
+      "PRC-003-4.3",
+      "PRC-003-4.5"
+    ],
+    "must_not": [
+      "skip bank verification",
+      "CPO exception authorises payment"
+    ]
+  },
+  {
+    "id": "EVAL-102",
+    "question": "A vendor changed legal entity but services were already delivered. Can the old vendor record simply be overwritten?",
+    "must_cite": [
+      "PRC-003-4.1",
+      "PRC-003-4.2",
+      "PRC-003-4.5"
+    ],
+    "must_not": [
+      "overwrite old record",
+      "pay mismatched entity"
+    ]
+  },
+  {
+    "id": "EVAL-103",
+    "question": "Peak fleet activation costs AED 8,000. Which single integrated approval matrix applies before the PO?",
+    "must_cite": [
+      "LOG-001-5.6",
+      "LOG-002-4.5"
+    ],
+    "must_not": [
+      "Logistics Manager alone",
+      "duplicate two separate matrices"
+    ]
+  },
+  {
+    "id": "EVAL-104",
+    "question": "Peak fleet activation costs AED 80,000. Does applying LOG-001-5.6 also satisfy the LOG-002 spend floor?",
+    "must_cite": [
+      "LOG-001-5.6",
+      "LOG-002-4.5"
+    ],
+    "must_not": [
+      "add a second duplicate approval chain",
+      "omit risk reviews"
+    ]
+  },
+  {
+    "id": "EVAL-105",
+    "question": "A new vendor will access customer data and company systems. Which onboarding specialist reviews are triggered?",
+    "must_cite": [
+      "PRC-001-4.6"
+    ],
+    "must_not": [
+      "Procurement alone",
+      "assume no trigger"
+    ]
+  },
+  {
+    "id": "EVAL-106",
+    "question": "A low-risk stationery vendor triggers none of the PRC-001-4.6 categories. Can Procurement leave the risk classification blank?",
+    "must_cite": [
+      "PRC-001-4.6"
+    ],
+    "must_not": [
+      "leave blank",
+      "invent specialist approval"
+    ]
+  },
+  {
+    "id": "EVAL-107",
+    "question": "A vendor failure creates AED 10,000 expected exposure but no safety issue. Is the breach material?",
+    "must_cite": [
+      "PRC-006-4.6",
+      "GOV-001-2.3"
+    ],
+    "must_not": [
+      "below threshold",
+      "subjective only"
+    ]
+  },
+  {
+    "id": "EVAL-108",
+    "question": "A vendor failure will stop a critical service for one business day. Is that a critical-continuity trigger?",
+    "must_cite": [
+      "PRC-006-4.6",
+      "PRC-007-5.1"
+    ],
+    "must_not": [
+      "not critical until more than one day",
+      "wait for normal review"
+    ]
+  },
+  {
+    "id": "EVAL-109",
+    "question": "The same verified customer makes a second unsuccessful no-proof return attempt for the same item 20 calendar days after the first. Is the repeated-attempt hold triggered?",
+    "must_cite": [
+      "RET-003-3.8",
+      "OPS-004-5.7"
+    ],
+    "must_not": [
+      "subjective decision",
+      "wait for a successful refund",
+      "no hold"
+    ]
+  },
+  {
+    "id": "EVAL-110",
+    "question": "An employee remembers a visually similar anonymous customer making an unsuccessful return last month, but no authorised case record links them. May the current attempt be counted as repeated?",
+    "must_cite": [
+      "RET-003-3.8",
+      "OPS-004-5.7"
+    ],
+    "must_not": [
+      "link by appearance",
+      "link by memory",
+      "automatic repeated flag"
+    ]
+  },
+  {
+    "id": "EVAL-111",
+    "question": "A customer requests 20 identical mispriced items, no quantity limit is configured and the aggregate difference is AED 100. Can the Duty Manager honour all 20?",
+    "must_cite": [
+      "RET-005-4.7",
+      "RET-005-4.5"
+    ],
+    "must_not": [
+      "Duty Manager approves all 20",
+      "quantity is unlimited",
+      "split the sale"
+    ]
+  },
+  {
+    "id": "EVAL-112",
+    "question": "An approved campaign configures a 24-unit limit. A customer requests 20 units and the aggregate price difference is AED 400. Does the default 10-unit limit still apply?",
+    "must_cite": [
+      "RET-005-4.7",
+      "RET-005-4.5"
+    ],
+    "must_not": [
+      "default 10 overrides approved campaign",
+      "Commercial Director required solely because quantity exceeds 10"
+    ]
+  },
+  {
+    "id": "EVAL-113",
+    "question": "An AED 3,000 sealed-load item vanishes in carrier custody before customer handover. What search, determination and write-off controls apply?",
+    "must_cite": [
+      "LOG-006-4.7",
+      "LOG-006-4.8",
+      "LOG-008-4.6"
+    ],
+    "must_not": [
+      "damage photographs are the only process",
+      "customer dispute closes inventory case",
+      "no write-off authority"
+    ]
+  },
+  {
+    "id": "EVAL-114",
+    "question": "AED 60,000 of goods is confirmed stolen in transit and the customer also reports non-receipt. Can one approval close the write-off, carrier claim and customer remedy?",
+    "must_cite": [
+      "LOG-006-4.5",
+      "LOG-006-4.7",
+      "LOG-006-4.8",
+      "LOG-008-4.6"
+    ],
+    "must_not": [
+      "single approval",
+      "net carrier recovery",
+      "close custody case with refund"
+    ]
+  },
+  {
+    "id": "EVAL-115",
+    "question": "AED 200 of found cash was accidentally placed in petty cash, but the amount and original find time are proven by contemporaneous records. May staff silently remove it and continue using the tin?",
+    "must_cite": [
+      "OPS-009-4.9",
+      "FIN-005-4.9"
+    ],
+    "must_not": [
+      "silently remove",
+      "continue using container",
+      "reset the find date"
+    ]
+  },
+  {
+    "id": "EVAL-116",
+    "question": "Found cash was mixed into petty cash and the amount cannot be reconstructed with certainty. Who determines the amount, and can an excess replenish the imprest?",
+    "must_cite": [
+      "OPS-009-4.9",
+      "FIN-005-4.8",
+      "FIN-005-4.9"
+    ],
+    "must_not": [
+      "Duty Manager estimates alone",
+      "replenish petty cash",
+      "offset a shortage"
+    ]
+  },
+  {
+    "id": "EVAL-117",
+    "question": "The same peak-sale backlog remains on day 8 after a seven-day fleet activation. May operations open another seven-day emergency order?",
+    "must_cite": [
+      "LOG-001-5.7",
+      "LOG-002-4.6"
+    ],
+    "must_not": [
+      "new emergency period",
+      "new order resets value",
+      "ignore aggregate cost"
+    ]
+  },
+  {
+    "id": "EVAL-118",
+    "question": "External emergency fleet capacity is still required on day 15. Can a second continuity extension be approved under LOG-001?",
+    "must_cite": [
+      "LOG-001-5.7",
+      "LOG-002-4.6",
+      "PRC-008-4.7"
+    ],
+    "must_not": [
+      "second emergency extension",
+      "restart seven days",
+      "operate without normal contract or sourcing exception"
+    ]
+  },
+  {
+    "id": "EVAL-119",
+    "question": "A complete valid invoice is submitted through the approved channel on day 179 but internal review finishes on day 183. Does it move to the over-180-day approval band?",
+    "must_cite": [
+      "PRC-002-5.2",
+      "PRC-002-5.3",
+      "PRC-002-5.8"
+    ],
+    "must_not": [
+      "Finance Controller required because processing ended on day 183",
+      "aging continues after valid submission"
+    ]
+  },
+  {
+    "id": "EVAL-120",
+    "question": "A vendor sends an invoice without a supplier legal entity on day 179 and provides a corrected valid invoice on day 181. Which timestamp determines the aging band?",
+    "must_cite": [
+      "PRC-002-5.3",
+      "PRC-002-5.8"
+    ],
+    "must_not": [
+      "day 179 fixes the band",
+      "incomplete invoice pauses aging",
+      "Accounts Payable delays rejection"
+    ]
+  },
+  {
+    "id": "EVAL-121",
+    "question": "A policy says repeated but gives no specific threshold. The same verified vendor triggers the same control twice within 20 calendar days. Which default applies?",
+    "must_cite": [
+      "GOV-001-2.12"
+    ],
+    "must_not": [
+      "subjective frequency",
+      "wait for a third event",
+      "ignore the prior authorised record"
+    ]
+  },
+  {
+    "id": "EVAL-122",
+    "question": "A first-time safety incident has no prior linked event. Must staff wait until it becomes repeated before escalating?",
+    "must_cite": [
+      "GOV-001-2.12",
+      "OPS-007-3.1"
+    ],
+    "must_not": [
+      "wait for repetition",
+      "label as repeated",
+      "delay safety escalation"
+    ]
+  },
+  {
+    "id": "EVAL-123",
+    "question": "A found watch has an evidenced replacement value of AED 2,000. Is it ordinary property for the 90-day retention rule?",
+    "must_cite": [
+      "OPS-009-4.5",
+      "OPS-009-4.10"
+    ],
+    "must_not": [
+      "ordinary property",
+      "90-day retention",
+      "value alone removes categorical high-value status"
+    ]
+  },
+  {
+    "id": "EVAL-124",
+    "question": "A found non-categorical item has market references ranging from AED 4,500 to AED 5,500. Which retention band applies?",
+    "must_cite": [
+      "OPS-009-4.5",
+      "OPS-009-4.10"
+    ],
+    "must_not": [
+      "90-day retention",
+      "use the lowest estimate",
+      "leave classification unresolved"
+    ]
+  },
+  {
+    "id": "EVAL-125",
+    "question": "An employee replaces an AED 400 petty-cash shortage with personal money and then submits an employee expense claim. Can Finance reimburse it and close the shortage?",
+    "must_cite": [
+      "FIN-005-4.10",
+      "FIN-002-4.9"
+    ],
+    "must_not": [
+      "reimburse the top-up",
+      "net variance is zero",
+      "close Loss Prevention review"
+    ]
+  },
+  {
+    "id": "EVAL-126",
+    "question": "Personal money has already been added to a till before the gross variance was recorded. What must the store do with the money and the shortage?",
+    "must_cite": [
+      "OPS-002-4.8",
+      "FIN-002-4.9"
+    ],
+    "must_not": [
+      "leave it in the till",
+      "reduce the gross shortage",
+      "expense reimbursement"
+    ]
+  },
+  {
+    "id": "EVAL-127",
+    "question": "A customer gives their name, loyalty number and usual store. Are those two matching details sufficient to disclose an e-receipt?",
+    "must_cite": [
+      "RET-003-3.2",
+      "RET-003-3.9"
+    ],
+    "must_not": [
+      "sufficient verification",
+      "disclose the e-receipt",
+      "ask for an OTP"
+    ]
+  },
+  {
+    "id": "EVAL-128",
+    "question": "A cash customer has no loyalty account or receipt. They provide the exact total and item, but only an approximate month and no store or 30-minute time window. Is that a unique lookup match?",
+    "must_cite": [
+      "RET-003-3.3"
+    ],
+    "must_not": [
+      "unique match",
+      "show candidate transactions",
+      "approximate month is enough"
+    ]
+  },
+  {
+    "id": "EVAL-129",
+    "question": "The same vendor has bought one employee two AED 290 meals within 90 days and offers a third AED 50 meal. Can the employee accept because each event is below AED 300?",
+    "must_cite": [
+      "PRC-005-3.7",
+      "PRC-005-3.8"
+    ],
+    "must_not": [
+      "accept without approval",
+      "each event is separate",
+      "no register entry"
+    ]
+  },
+  {
+    "id": "EVAL-130",
+    "question": "A vendor offers repeated hospitality while its tender is being evaluated. Can cumulative executive approval make acceptance permissible?",
+    "must_cite": [
+      "PRC-005-3.5",
+      "PRC-005-3.8"
+    ],
+    "must_not": [
+      "approval overrides active tender",
+      "accept",
+      "split among hosts"
+    ]
+  },
+  {
+    "id": "EVAL-131",
+    "question": "An unattended bag emits smoke and an unusual odour, and the Duty Manager cannot be reached. May a frontline associate evacuate the store?",
+    "must_cite": [
+      "OPS-009-4.11",
+      "OPS-003-4.5"
+    ],
+    "must_not": [
+      "wait for Duty Manager",
+      "touch or investigate",
+      "regional approval first"
+    ]
+  },
+  {
+    "id": "EVAL-132",
+    "question": "Security directs an immediate evacuation while the Duty Manager is incapacitated. Who may act, and what is recorded after safety?",
+    "must_cite": [
+      "OPS-007-3.5",
+      "OPS-003-4.5"
+    ],
+    "must_not": [
+      "only Duty Manager",
+      "delay evacuation",
+      "no incident record"
+    ]
+  },
+  {
+    "id": "EVAL-133",
+    "question": "Quality confirms AED 8,000 of supplier-defective goods should be returned for credit. What approvals and physical controls apply before dispatch?",
+    "must_cite": [
+      "LOG-006-4.9",
+      "LOG-006-4.10"
+    ],
+    "must_not": [
+      "carrier claim only",
+      "ship before RMA",
+      "write off automatically"
+    ]
+  },
+  {
+    "id": "EVAL-134",
+    "question": "AED 60,000 of approved RTV goods were delivered back, but the supplier disputes the credit. Can Accounts Payable net the expected credit against another invoice?",
+    "must_cite": [
+      "FIN-003-5.7",
+      "PRC-006-4.7",
+      "LOG-006-4.10"
+    ],
+    "must_not": [
+      "informal netting",
+      "close the claim",
+      "automatic write-off"
+    ]
+  },
+  {
+    "id": "EVAL-135",
+    "question": "A vendor offers an unsolicited AED 80 branded gift outside any decision period, and the employee has received no other gift from that vendor in 90 days. What must happen?",
+    "must_cite": [
+      "PRC-005-3.7",
+      "PRC-005-3.9"
+    ],
+    "must_not": [
+      "no register entry",
+      "cash equivalent",
+      "automatic rejection solely because it is a gift"
+    ]
+  },
+  {
+    "id": "EVAL-136",
+    "question": "A vendor sends an employee a non-returnable AED 150 gift. Can Compliance approve the employee keeping it?",
+    "must_cite": [
+      "PRC-005-3.9"
+    ],
+    "must_not": [
+      "personal retention",
+      "keep it quietly",
+      "cash it out"
+    ]
+  }
+]
+

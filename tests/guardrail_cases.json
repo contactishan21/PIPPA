@@ -1,0 +1,68 @@
+[
+  {
+    "id": "GAP-IT-001",
+    "question": "I forgot my laptop password. How do I reset it?",
+    "expected_mode": "Guardrail · unavailable",
+    "expected_contact": "IT Service Desk"
+  },
+  {
+    "id": "GAP-LOG-001",
+    "question": "How do I refuel and operate a warehouse forklift?",
+    "expected_mode": "Guardrail · unavailable",
+    "expected_contact": "Logistics or Supply Chain manager"
+  },
+  {
+    "id": "GAP-GEN-001",
+    "question": "What is the procedure for booking a meeting room?",
+    "expected_mode": "Guardrail · unavailable",
+    "expected_contact": "line manager"
+  },
+  {
+    "id": "GAP-GEN-002",
+    "question": "Can I publish a company post on social media?",
+    "expected_mode": "Guardrail · unavailable",
+    "expected_contact": "Marketing or Communications"
+  },
+  {
+    "id": "PARTIAL-OPS-001",
+    "question": "Can you show me how to operate the POS till?",
+    "expected_mode": "Guardrail · unavailable",
+    "expected_contact": "Duty Manager"
+  },
+  {
+    "id": "PARTIAL-FIN-DECIMAL-GAP",
+    "question": "Who approves AED 50,000.99?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Chief Financial Officer"
+  },
+  {
+    "id": "PARTIAL-FIN-MULTIPLE-AMOUNTS",
+    "question": "Who approves AED 10,000 or AED 60,000?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Chief Financial Officer"
+  },
+  {
+    "id": "PARTIAL-FIN-MALFORMED-AMOUNT",
+    "question": "Who approves AED 1.5.6 million?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Chief Financial Officer"
+  },
+  {
+    "id": "PARTIAL-HR-COMBINED-LEAVE",
+    "question": "Can I combine sick leave with annual leave?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Human Resources"
+  },
+  {
+    "id": "PARTIAL-HR-LEAVE-CASHOUT",
+    "question": "Can unused sick leave be paid out?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Human Resources"
+  },
+  {
+    "id": "PARTIAL-FIN-FOOD-ALLOWANCE",
+    "question": "How much petty cash can I issue staff working overnight as a food allowance?",
+    "expected_mode": "Guardrail · partial evidence",
+    "expected_contact": "Finance"
+  }
+]
