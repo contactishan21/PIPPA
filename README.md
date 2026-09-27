@@ -4,6 +4,12 @@ PIPPA is a personal showcase prototype of an employee policy and procedure assis
 
 The fictional Dune & Palm Commerce LLC library contains 76 current synthetic documents and 491 controlled clauses. The current application retrieves evidence and produces deterministic answers. It does not generate unrestricted model responses or require an AI API account. Its policies and answers must not be used for real operational decisions.
 
+## Try the hosted showcase
+
+[Open the public PIPPA showcase](https://ai-retail-showcase-mvp-kaxtrrxfdsty5ury7huzdg.streamlit.app/)
+
+Sign in with an email address you can access, then use fictional questions only. Do not enter real confidential, personal, customer, employee, financial, or credential information. The hosted showcase is separate from this public source repository and retains its own private operational records and role assignments.
+
 ## Three outcomes
 
 | Example question | Intended outcome |
@@ -62,4 +68,4 @@ Generated reports go into the ignored `outputs/` directory. These tests cover sy
 
 ## Scope
 
-This prototype has no banking or customer-account integration. Applying this approach to other organisations would require approved content, appropriate integrations, and deployment-specific validation. A public demo link will be added only after access has been verified and publication approved.
+This prototype has no banking or customer-account integration. Applying this approach to other organisations would require approved content, appropriate integrations, and deployment-specific validation.
