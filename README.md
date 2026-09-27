@@ -6,7 +6,7 @@ The fictional Dune & Palm Commerce LLC library contains 76 current synthetic doc
 
 ## Try the hosted showcase
 
-[Open the public PIPPA showcase](https://ai-retail-showcase-mvp-kaxtrrxfdsty5ury7huzdg.streamlit.app/)
+[Open the public PIPPA showcase](https://pippa.novastrum.app/)
 
 Sign in with an email address you can access, then use fictional questions only. Do not enter real confidential, personal, customer, employee, financial, or credential information. The hosted showcase is separate from this public source repository and retains its own private operational records and role assignments.
 
